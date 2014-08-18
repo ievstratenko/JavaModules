@@ -7,45 +7,43 @@ import java.util.Scanner;
 
 
 public class Main {
-
-	private static Scanner scan;
 	public static void main(String[] args) throws FileNotFoundException {
-//		firstTask();
-//		secondTask();
-//		thirdTask();
-//		fourthTask();
-//		fifthTask_a();
-//		fifthTask_b();
-//		fifthTask_c();
-//		fifthTask_d();
-//		fifthTask_e();
-//		fifthTask_f();
-//		fifthTask_j();
-//		fifthTask_k();
-//		fifthTask_l();
-//		fifthTask_m();
-//		fifthTask_n();
-//		fifthTask_o();
-//		fifthTask_p();
-//		fifthTask_q();
+		firstTask();
+		secondTask();
+		thirdTask();
+		fourthTask();
+		fifthTask_a();
+		fifthTask_b();
+		fifthTask_c();
+		fifthTask_d();
+		fifthTask_e();
+		fifthTask_f();
+		fifthTask_j();
+		fifthTask_k();
+		fifthTask_l();
+		fifthTask_m();
+		fifthTask_n();
+		fifthTask_o();
+		fifthTask_p();
+		fifthTask_q();
 		fifthTask_r();
-//		fifthTask_h();
-		//Task_6a();
-//		Task_7();
-//		Task_11();
-//		Task_6b();
-//		Task_10();
-//		Task_8();
-//		Task_9();
-//		Task_12();
-//		Task_13a();
-//		Task_13b();
-//		Task_13d();
-//		Task_13c();
-//		Task_14a();
-//		Task_14b();
-//		Task_14c();
-//		Task_15();
+		fifthTask_h();		
+		Task_6a();
+		Task_6b();
+		Task_7();
+		Task_8();
+		Task_9();
+		Task_10();
+		Task_11();
+		Task_12();
+		Task_13a();
+		Task_13b();
+		Task_13d();
+		Task_13c();
+		Task_14a();
+		Task_14b();
+		Task_14c();
+		Task_15();
 	}
 	
 	public static void firstTask(){
@@ -257,7 +255,7 @@ public class Main {
 		String firstName;
 		String lastName;
 		int age;
-		scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter your first name: ");
 		firstName = scan.nextLine();
 		System.out.print("Enter your last name: ");
@@ -271,7 +269,7 @@ public class Main {
 		String firstName;
 		char upperCase;
 		String resultString;
-		scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter your first name: ");
 		firstName = scan.nextLine();
 		upperCase = firstName.substring(0, 1).toUpperCase().charAt(0);
@@ -283,14 +281,14 @@ public class Main {
 		String firstName;
 		String lastName;
 		int age;
-		scan = new Scanner (new File("src/inputFile.txt"));
+		Scanner scan = new Scanner (new File("src/module1/inputFile.txt"));
 		firstName = scan.nextLine();
 		lastName = scan.nextLine();
 		age = scan.nextInt();
 		scan.close();
 		System.out.println(firstName + " " + lastName + " " + age);
 		
-		PrintWriter writer = new PrintWriter("src/outputFile.txt");
+		PrintWriter writer = new PrintWriter("src/module1/outputFile.txt");
 		writer.println(firstName);
 		writer.println(lastName);
 		writer.println(age);
