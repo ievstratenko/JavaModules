@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 public class Person {
 	String firstName;
 	String lastName;
-	String dateOfBirth;
+	String dateOfBirth; // better to change type to Date
 	
 	
 	
@@ -27,13 +27,14 @@ public class Person {
 		dayOfBirth.setTime(birthDay);
 		int age;
 		GregorianCalendar today = new GregorianCalendar();
-		age = today.get(GregorianCalendar.YEAR) - dayOfBirth.get(GregorianCalendar.YEAR);
+		// it's not a number of full years
+		age = today.get(GregorianCalendar.YEAR) - dayOfBirth.get(GregorianCalendar.YEAR); 
 		return age;
 	}
 	
 	public String getFullName(){
-		String fullName;
+		String fullName;// unnecessary local variable
 		fullName = firstName + " " + lastName;
-		return fullName;
+		return fullName; // return firstName + " " + lastName would be enough here
 	}
 }
